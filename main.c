@@ -4,6 +4,20 @@
 
 // This is where you add the function calculate_hypotenuse
 
+float calculate_hypotenuse(float base, float height){
+    float hypotenuse = 0;
+
+    //printf("input base: %.2f, then squared: %.2f\n", base, pow(base, 2));
+    //printf("input height: %.2f, then squared: %.2f\n", height, pow (height, 2));
+
+    float total = pow(base, 2) + pow(height, 2);
+    //printf("Sum of base and height squares: %.2f\n", total);
+
+    hypotenuse = sqrt(total);
+
+    return hypotenuse;
+}
+
 int main() {
     float a = 3.0;
     float b = 4.0;
